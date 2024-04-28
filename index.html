@@ -277,7 +277,9 @@
 					<p style="font-size:medium;">[V.M. Edelstein, Solid State Communications,Volume 73,issue 3,1990]</p>
 					<!-- Add a note that this is opposite to the spin Hall effect where they create a spin current with a charge current which can be transfered to a feromagentic layer to detect. -->
 					<aside class="notes">
-						<p>Rashba is a momentum-dependent splitting of spin bands in bulk crystals</p>
+						<li>Interface with broken symmetry causes electron spin to link with momentum (Rashba effect), splitting up/down spin energy levels.</li>
+						<li>Spin accumulation (s) along y arises from asymmetric occupation on application of bias</li>
+						<li>Spin accumulation causes a inplane magnetic moment</li>
 						<p>Unlike spin Hall effect where they create a spin current with a charge current which
 							can be transfered to a feromagentic layer to detect.</p>
 						<p>A Rashba interface is a Heavy metal-metal interface with broken structural inversion
@@ -343,6 +345,10 @@
 							<img src="images/JJ-planar-pt-full.svg" alt="Rashba Edelstein Effect" style="width: 100%;">
 						</div>
 					</div>
+					<aside class="notes">
+						<p>spin accumulation due to SHE bulk and RE interface? how to solve => </p>
+						<p>superconducting layer directly above the Rashba interface</p>
+					</aside>
 				</section>
 
 				<section>
@@ -368,6 +374,16 @@
 									style="width: 100%;">Final Sample</td>
 						</tr>
 					</table>
+
+					<aside class="notes">
+						<ul>
+							<li>ma-N -ve resist, PMMA +ve resist</li>
+							<li>NaoH to remode resist</li>
+							<li>Chlorobezene to do undercut</li>
+							<li> 1pA current 30kV</li>
+
+						</ul>
+					</aside>
 
 				</section>
 
@@ -425,9 +441,15 @@
 				<section data-background-image="images/JJ_sem_colour.png">
 					<h3 style="color: rgba(255, 255, 255, 0.75);">SEM Image of the device</h3>
 					<h5 style="color: rgba(255, 255, 255, 0.75);">(With false colours indicating the layers)</h5>
-					<section>
-						<!-- push the heading up -->
-					</section>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
 
 				</section>
 
@@ -447,6 +469,9 @@
 							</td>
 						</tr>
 					</table>
+					<aside class="notes">
+						<p>proximatisation below 4k</p>
+					</aside>
 				</section>
 
 				<section>
@@ -458,8 +483,41 @@
 					</p>
 
 					<aside class="notes">
-						<p>quasi-particle current density at interface is proportional to the supercurrent density in
+						<li>shift in the presence of pt</li>
+						<li>also tried thinning the pt layer</li>
+						<li>shift unlike ferromagnetic barrier because of coeercive field</li>
+
+					</aside>
+				</section>
+
+				<section>
+					<h3>Mechanism of R-E detection</h3>
+					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
+					<table style="width: 100%;height: 100%; font-size: 20px;">
+						<tr>
+							<td style="width: 50%;"><img src="images/JJ_above_Tc.png"
+									alt="Physical effects in JJ above Tc" style="width: 100%;">Physical effects in JJ
+								above $T_c$</td>
+							<td style="width: 50%;"><img src="images/JJ_belowTc.png"
+									alt="Physical effects in JJ below Tc" style="width: 100%;">Physical effects in JJ
+								below $T_c$</td>
+						</tr>
+					</table>
+					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)
+					</p>
+					<aside class="notes">
+						<li>3 effects above tc</li>
+						<li>Rashba moment interacts with the flux through JJ to cause shift</li>
+						<li>MRe is quasi current dependant</li>
+						<li>Isolate RE from SHE as the system is superconducting</li>
+						<li>Phase difference $\delta$ of the junction can be tuned by the junction geometry and sweep</li>
+						<li>TODO: negative moment</li>
+						<li>shift is sweep dependant</li>
+						<li>shift is temperature depenant  as on rt</li>
+						<li>shift is current independant</li>
+						<li>quasi-particle current density at interface is proportional to the supercurrent density in
 							the proximatized Cu barrier.
+						</li>
 							Therefore, the screening current distribution in the junction due to the external magnetic
 							field is coupled to the MRE.
 							When the magnitude of the external magnetic field is decreased, the junction opposes the
@@ -470,6 +528,7 @@
 							field.</p>
 					</aside>
 				</section>
+
 				<section>
 					<h3>Simulation to verify $I_cH$ vs $VH$</h3>
 					<!-- Insert the image of python logo on the top right of the slide and on top of all the text  -->
@@ -488,25 +547,8 @@
 									style="width: 100%;">Normalised Plot of simulated $VH$</td>
 						</tr>
 					</table>
-				</section>
-				<section>
-					<h3>Mechanism explanation in JJ</h3>
-					<!-- Create a table with 1 rows and 2 columns table spans the entire slide / div. -->
-					<table style="width: 100%;height: 100%; font-size: 20px;">
-						<tr>
-							<td style="width: 50%;"><img src="images/JJ_above_Tc.png"
-									alt="Physical effects in JJ above Tc" style="width: 100%;">Physical effects in JJ
-								above $T_c$</td>
-							<td style="width: 50%;"><img src="images/JJ_belowTc.png"
-									alt="Physical effects in JJ below Tc" style="width: 100%;">Physical effects in JJ
-								below $T_c$</td>
-						</tr>
-					</table>
-					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)
-					</p>
 					<aside class="notes">
-						<p>Isolate RE from SHE as the system is superconducting</p>
-						<p>Phase difference $\delta$ of the junction can be tuned by the junction geometry</p>
+						<li>Lobe size and periodicity match</li>
 					</aside>
 				</section>
 
@@ -516,6 +558,8 @@
 					<img src="images/ourPaper.png" alt="Nature Comications publication" style="width: 70%;">
 					<p style="font-size:20px;">Senapati, T., <b>Karnad, A.K.</b> & Senapati, K. Nat Com 14, 7415 (2023)
 					</p>
+					<aside class="notes">
+						<li>further anaysis, temp dep of shift, current dep, thickness dep, asymmetric iv etc in publication </li>
 				</section>
 				<section>
 					<h3>Conclusion</h3>
@@ -552,6 +596,10 @@
 					<img src="images/py_instrumentation.png" alt="py instrumentation">
 
 				</section>
+				<aside class="notes">
+					<p>Automated $I_c$ extraction from the IV curve of a JJ</p>
+					<p>Control of scientific measurement with python pyvisa and Labivew</p>
+				</aside>
 			</section>
 
 
@@ -678,6 +726,9 @@
 									style="width: 100%;">Measured RT</td>
 						</tr>
 					</table>
+					<aside class="notes">
+						<li>skip others if no time, only simulations</li>
+					</aside>
 				</section>
 
 				<section>
@@ -817,6 +868,12 @@
 				<section data-background-image="images/github.png" data-background-size="80%"
 					data-background-color="#090e17">
 
+					<aside class="notes">
+						<li>Reproducible simulation; workflow, version control (eg of phd student)</li>
+						<li>Octopus</li>
+						<li>HPC: numba JIT julia</li>
+						<li>HPC: docker spack debian</li>
+						<li>Postopus</li>
 				</section>
 
 				<section data-visibility="hidden">
@@ -881,6 +938,11 @@
 							</td>
 						</tr>
 					</table>
+					<aside class="notes">
+						<li>skyrmions, vortices and helical config</li>
+						<li>higthrouput search on t, A,D, H to define phases</li>
+						<li>Auto encoder on 2d</li>
+					</aside>
 				</section>
 			</section>
 
@@ -898,9 +960,16 @@
 					</ul>
 					<small>[Jeon et al. Nature Materials (2022), Pal et al. Nature Physics (2022), Jeon et al. Nat. Nanotech. (2023)]</small>
 					<aside class="notes">
-						- JDE Josephson Junctions formed with NiTe,, WTe, ,PtTe.
-						- Platinim— combination of proximity induced magnetization and proximity induced superconductivity
-						-  up to 80% non-reciprocity in the critical supercurrent ( modeld with temp dep)
+						<ul>
+							<li>Use for near term quantum computing</li>
+							<li>Jeon and Pal similar to my experience</li>
+							<li>JDE Josephson Junctions formed with NiTe, WTe, PtTe</li>
+							<li>Grant mentions B20 (FeSi-type) materials</li>
+							<li>Proximity induced superconductivity and magnetism in Pt</li>
+							<li>High non-reciprocity in the critical supercurrent (modeled with temperature dependence)</li>
+							<li>Superconductivity with non-zero total spin</li>
+						</ul>
+
 
 					</aside>
 
@@ -914,8 +983,8 @@
 								reservoir or ferroelectric reservoir (here made from domain walls) (center) for
 								clustering.<br>
 								<small>[inspired from Karin Everschor-Sitte et. al. arXiv (2023)]</small>
-
-				</section>
+					<aside class="notes">
+						<li>Neuromorphic computing</li>
 
 				<section>
 					<h3>Imaging 3D spin textures with NV magnetometry</h3>
@@ -944,6 +1013,7 @@
 					</div>
 
 					<aside class="notes">
+						<li></li>
 					</aside>
 
 				</section>
